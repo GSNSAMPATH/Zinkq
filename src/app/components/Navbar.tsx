@@ -38,7 +38,7 @@ export default function Navbar() {
     >
       <div
         className={`
-          w-full mx-auto flex items-center justify-between pr-4 md:px-10  rounded-xl transition-all duration-300
+          w-full mx-auto flex items-center justify-between pr-4 md:px-10  rounded-xl transition-all duration-300 py-2
           ${isScrolled ? "shadow-lg bg-white/80" : "mt-1 shadow-none bg-white"}
         `}
       >
