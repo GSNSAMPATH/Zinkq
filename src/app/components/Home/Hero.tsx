@@ -2,8 +2,8 @@ import Image from "next/image";
 
 export default function Hero() {
   return (
-    <section className="pb-20 mx-2 md:mx-8 rounded-b-3xl py-4 md:py-8">
-      <div className="md:px-20 mx-auto px-2 rounded-xl md:rounded-3xl bg-[#F0F2F4]">
+    <section className="pb-20 mx-2 md:mx-4 lg:mx-8 rounded-b-3xl py-4 md:py-8 ">
+      <div className="md:px-10 xl:px-12 2xl:px-20 mx-auto px-2 rounded-xl md:rounded-3xl bg-[#F0F2F4]">
         
         {/* Big Image */}
         <div className="overflow-hidden">
@@ -12,22 +12,22 @@ export default function Hero() {
             width={1600}
             height={900}
             alt="Startup team meeting"
-            className="object-cover w-full h-[200px] md:h-[500px] mt-30 md:mt-40 rounded-3xl "
+            className="object-cover w-full h-[200px] sm:h-[300px] md:h-[400px] lg:h-[500px] xl:h-[500px] 2xl:h-[570px] mt-20 sm:mt-30 lg:mt-32 rounded-xl md:rounded-3xl"
           />
         </div>
 
         {/* Text Section */}
         <div className="text-center mt-10 relative">
           {/* Curved Background */}
-          <div className="absolute inset-0 top-[-100px] md:left-1/2 -translate-x-1/2 md:w-[900px] h-[500px] bg-gradient-to-b from-white to-transparent rounded-full blur-3xl opacity-40"></div>
+          <div className="absolute inset-0 top-[-100px] lg:left-1/2 -translate-x-1/2 md:w-[900px] h-[500px] bg-gradient-to-b from-white to-transparent rounded-full blur-3xl opacity-40"></div>
 
-          <h1 className="relative text-[20px] md:text-[48px] font-bold leading-tight font-roboto">
+          <h1 className="relative text-[20px] md:text-[38px] lg:text-[48px] font-bold leading-tight font-roboto">
             <span className="text-blue-600">Zinkq -</span> The Startup Network
             <br />
             That Builds Together
           </h1>
 
-          <p className="relative mt-4 text-gray-600 max-w-2xl mx-auto font-roboto text-[14px] md:text-[20px]">
+          <p className="relative mt-4 text-gray-600 max-w-2xl mx-auto font-roboto text-[14px] md:text-[16px] lg:text-[20px]">
             Where Sri Lanka’s entrepreneurs, creators, and innovators connect to grow,
             learn, and make impact.
           </p>

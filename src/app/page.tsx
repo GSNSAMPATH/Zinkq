@@ -8,7 +8,7 @@ export default function Home() {
     <>
       <Hero />
       <WhatIsZinkq />
-      {/* <WhyJoinZinkq /> */}
+      <WhyJoinZinkq />
     </>
   );
 }

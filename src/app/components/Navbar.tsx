@@ -32,13 +32,13 @@ export default function Navbar() {
   return (
     <nav
       className={`
-        w-full top-0 z-50 px-4 md:px-28 transition-all duration-300
+        w-full top-0 z-50 px-4 md:px-14 lg:px-18 xl:px-20 2xl:px-28 transition-all duration-300
         ${isScrolled ? "md:fixed mt-2" : "absolute mt-6 md:mt-14"}
       `}
     >
       <div
         className={`
-          w-full mx-auto flex items-center justify-between pr-4 md:px-10  rounded-xl transition-all duration-300
+          w-full mx-auto flex items-center justify-between px-4 lg:px-10  rounded-xl transition-all duration-300 py-3
           ${isScrolled ? "shadow-lg bg-white/80" : "mt-1 shadow-none bg-white"}
         `}
       >
@@ -46,9 +46,9 @@ export default function Navbar() {
         <Link href="/" className="flex items-center">
           <Image
             src="/Zinkq logo files-01.png"
-            width={100}
-            height={100}
-            className="w-auto h-auto"
+            width={65}
+            height={65}
+            className="lg:w-auto lg:h-auto"
             alt="Zinkq logo"
           />
         </Link>
@@ -83,13 +83,13 @@ export default function Navbar() {
         {/* Desktop Join Button */}
         <Link
           href="#"
-          className="hidden md:block px-6 py-2 rounded-full bg-gradient-to-r from-purple-500 to-blue-500 text-white font-medium shadow-sm"
+          className="hidden md:block px-6 md:py-1 lg:py-2 rounded-full bg-gradient-to-r from-purple-500 to-blue-500 text-white font-medium shadow-sm"
         >
           Join
         </Link>
 
         {/* Mobile Menu Button */}
-        <button className="md:hidden text-3xl" onClick={() => setOpen(!open)}>
+        <button className="md:hidden text-xl sm:text-3xl" onClick={() => setOpen(!open)}>
           {open ? <FaTimes /> : <FaBars />}
         </button>
       </div>
