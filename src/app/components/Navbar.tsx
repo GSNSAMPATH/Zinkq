@@ -38,7 +38,7 @@ export default function Navbar() {
     >
       <div
         className={`
-          w-full mx-auto flex items-center justify-between pr-4 md:px-10  rounded-xl transition-all duration-300 py-2
+          w-full mx-auto flex items-center justify-between pr-4 md:px-10  rounded-xl transition-all duration-300
           ${isScrolled ? "shadow-lg bg-white/80" : "mt-1 shadow-none bg-white"}
         `}
       >
@@ -46,8 +46,8 @@ export default function Navbar() {
         <Link href="/" className="flex items-center">
           <Image
             src="/Zinkq logo files-01.png"
-            width={120}
-            height={120}
+            width={100}
+            height={100}
             className="w-auto h-auto"
             alt="Zinkq logo"
           />
