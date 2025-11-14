@@ -1,0 +1,42 @@
+import Image from "next/image";
+
+export default function Hero() {
+  return (
+    <section className="pb-20 mx-2 md:mx-8 rounded-b-3xl py-4 md:py-8">
+      <div className="md:px-20 mx-auto px-2 rounded-xl md:rounded-3xl bg-[#F0F2F4]">
+        
+        {/* Big Image */}
+        <div className="overflow-hidden">
+          <Image
+            src="https://res.cloudinary.com/dgm9hbcb1/image/upload/v1763115529/nkxhgeiy5ekueji2hjzy.jpg"
+            width={1600}
+            height={900}
+            alt="Startup team meeting"
+            className="object-cover w-full h-[200px] md:h-[500px] mt-30 md:mt-40 rounded-3xl "
+          />
+        </div>
+
+        {/* Text Section */}
+        <div className="text-center mt-10 relative">
+          {/* Curved Background */}
+          <div className="absolute inset-0 top-[-100px] md:left-1/2 -translate-x-1/2 md:w-[900px] h-[500px] bg-gradient-to-b from-white to-transparent rounded-full blur-3xl opacity-40"></div>
+
+          <h1 className="relative text-[20px] md:text-[48px] font-bold leading-tight font-roboto">
+            <span className="text-blue-600">Zinkq -</span> The Startup Network
+            <br />
+            That Builds Together
+          </h1>
+
+          <p className="relative mt-4 text-gray-600 max-w-2xl mx-auto font-roboto text-[14px] md:text-[20px]">
+            Where Sri Lanka’s entrepreneurs, creators, and innovators connect to grow,
+            learn, and make impact.
+          </p>
+
+          <button className="relative mt-6 px-8 py-3 rounded-full bg-gradient-to-r from-purple-500 to-blue-500 text-white font-semibold shadow-md mb-10 text-[16px]">
+            Join Zinkq Now
+          </button>
+        </div>
+      </div>
+    </section>
+  );
+}
